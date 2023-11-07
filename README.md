@@ -1,40 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Watch the video]](./demo.mp4)
 
-## Getting Started
+https://john-bessey-photo-album.netlify.app/
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js(14.1 - latest version), Tailwind CSS, Axios, React-beautiful-dnd, React dom(18 - latest version)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Things I have done
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Used Next.js for SEO (Meta tags, Canonical tag, Semantic tags)
+- Used Next.js's Image tag for image lazy loading
+- Made components as reusable as possible
+- Integrated axios to fetch necessary data
+- Used React-beautiful-dnd for drag and drop
+- **_Responsive Design_** for both mobile and desktop
+- Deployed app to netlify : https://john-bessey-photo-album.netlify.app/
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Things can be done if I have more time
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- I will integrate skeleton loading for images
+- I will integrate image cache
+- More intuitive design with tailwind CSS frameworks
+- Add some more features(Save, Edit, Download)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Time taken: 6 hours(including requirements onboarding time)
 
-## Learn More
+## Lighthouse Result:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Performance: 94
+Accessibility: 100
+Best Practices: 100
+SEO: 93

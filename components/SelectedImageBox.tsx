@@ -1,7 +1,5 @@
 import { ImageType } from "@/pages";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Draggable, Droppable } from "react-beautiful-dnd";
+import { Droppable } from "react-beautiful-dnd";
 import { CustomImage } from "./CustomImage";
 
 interface SelectedImageBoxProps {

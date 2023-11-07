@@ -8,7 +8,10 @@ export default function Document() {
           name="description"
           content={"Photo Album Generator by John Bessey"}
         />
-        <link rel="canonical" href={"https://localhost:3000"} />
+        <link
+          rel="canonical"
+          href={"https://john-bessey-photo-album.netlify.app"}
+        />
       </Head>
       <body>
         <Main />

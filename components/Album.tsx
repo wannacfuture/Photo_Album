@@ -6,7 +6,6 @@ import { ImageBox } from "./ImageBox";
 import { SelectedImageBox } from "./SelectedImageBox";
 
 const Album = ({ photos }: { photos: ImageType[] }) => {
-  const [images, setImages] = useState(photos);
   const [selectedImages, setSelectedImages] = useState<ImageType[]>([]);
   const [winReady, setWinReady] = useState(false);
 
@@ -16,7 +15,7 @@ const Album = ({ photos }: { photos: ImageType[] }) => {
 
   const onDragEnd = (result: DropResult) => {
     if (!result.destination) return;
-    const selectedPhoto = images[result.source.index];
+    const selectedPhoto = photos[result.source.index];
     selectedImages.filter((image) => image.id === selectedPhoto.id).length ===
       0 && setSelectedImages([...selectedImages, photos[result.source.index]]);
   };
