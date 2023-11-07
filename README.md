@@ -1,4 +1,4 @@
-<video src='./demo.mp4' width=180/>
+[![Watch the video]](./demo.mp4)
 
 https://john-bessey-photo-album.netlify.app/
 
