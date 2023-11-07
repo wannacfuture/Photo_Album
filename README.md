@@ -4,8 +4,6 @@
 <img align="center" height="300" src="./demo.gif" />
 </div>
 
-
-
 ### Desktop/Mobile Preview Link :
 
 https://john-bessey-photo-album.netlify.app/
@@ -27,7 +25,7 @@ Next.js(14.1 - latest version), Tailwind CSS, Axios, React-beautiful-dnd, React 
 ## Things can be done if I have more time
 
 - I will integrate skeleton loading for images
-- I will integrate image cache
+- I will integrate more efficient image cache
 - More intuitive design with tailwind CSS frameworks
 - Add some more features(Save, Edit, Download)
 
@@ -36,6 +34,6 @@ Next.js(14.1 - latest version), Tailwind CSS, Axios, React-beautiful-dnd, React 
 ## Lighthouse Result:
 
 Performance: 94
-Accessibility: 100
-Best Practices: 100
+Accessibility: 99
+Best Practices: 95
 SEO: 93
