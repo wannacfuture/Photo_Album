@@ -6,6 +6,12 @@
 
 https://john-bessey-photo-album.netlify.app/
 
+
+
+### Desktop/Mobile Preview Link :
+
+https://john-bessey-photo-album.netlify.app/
+
 ## Technologies Used
 
 Next.js(14.1 - latest version), Tailwind CSS, Axios, React-beautiful-dnd, React dom(18 - latest version)
