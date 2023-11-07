@@ -17,7 +17,8 @@ export const CustomImage = ({ src, alt, width, height }: CustomImageProps) => {
       alt={alt}
       width={width}
       height={height}
-      objectFit="fill"
+      style={{ height: height }}
+      objectFit="contain"
       className={`
         duration-700 ease-in-out group-hover:opacity-75 cursor-pointer
         ${

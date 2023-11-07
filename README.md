@@ -12,7 +12,7 @@ Next.js(14.1 - latest version), Tailwind CSS, Axios, React-beautiful-dnd, React 
 
 ## Things I have done
 
-- Used Next.js for SEO (Meta tags, Canonical tag, Semantic tags)
+- Used Next.js for SEO (Meta tags, Canonical tag, Semantic tags - main, section, aside, article, h, etc)
 - Used Next.js's Image tag for image lazy loading
 - Made components as reusable as possible
 - Integrated axios to fetch necessary data

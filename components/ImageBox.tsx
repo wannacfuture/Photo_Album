@@ -1,7 +1,7 @@
-import { ImageType } from "@/pages";
-import Image from "next/image";
 import { Draggable, Droppable } from "react-beautiful-dnd";
-import { CustomImage } from "./CustomImage";
+
+import { ImageType } from "@/pages";
+import { CustomImage } from "@/components/CustomImage";
 
 interface ImageBoxProps {
   photos: ImageType[];
@@ -13,7 +13,7 @@ export const ImageBox = ({ photos }: ImageBoxProps) => {
         <div
           ref={provided.innerRef}
           {...provided.droppableProps}
-          className="flex flex-wrap gap-4"
+          className="flex flex-wrap gap-4 justify-center"
         >
           {photos.map((photo, index) => (
             <Draggable
@@ -23,7 +23,7 @@ export const ImageBox = ({ photos }: ImageBoxProps) => {
             >
               {(provided, snapshot) => (
                 <>
-                  <div
+                  <article
                     ref={provided.innerRef}
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
@@ -34,9 +34,9 @@ export const ImageBox = ({ photos }: ImageBoxProps) => {
                       width={200}
                       height={200}
                     />
-                  </div>
+                  </article>
                   {snapshot.isDragging && (
-                    <div className="!w-[200px] !h-[150px]"></div>
+                    <div className="!w-[200px] !h-[200px]"></div>
                   )}
                 </>
               )}

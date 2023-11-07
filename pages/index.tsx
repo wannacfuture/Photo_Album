@@ -16,13 +16,13 @@ interface HomeProps {
 
 const Home: NextPage<HomeProps> = ({ images }) => {
   return (
-    <div className="container p-5">
-      <div className="mb-5">
+    <div className="container p-5 mx-auto">
+      <header className="mb-5">
         <h1 className="text-2xl">
           <b>Brainscape App Coding Exercise</b>
         </h1>
         <h2>Photo Album Generator by John Bessey</h2>
-      </div>
+      </header>
       <Album photos={images} />
     </div>
   );
@@ -32,8 +32,9 @@ export const getStaticProps: GetStaticProps = async () => {
   const API_ENDPOINT = "https://api.slingacademy.com/v1/sample-data/photos"; // Adjust if needed
 
   try {
-    const response = await axios.get(`${API_ENDPOINT}?limit=100`);
-    const images: ImageType[] = response.data.photos;
+    const images: ImageType[] = await axios
+      .get(`${API_ENDPOINT}?limit=100`)
+      .then((res) => res.data.photos);
 
     return {
       props: {
