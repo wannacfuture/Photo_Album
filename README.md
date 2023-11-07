@@ -1,10 +1,8 @@
 ### Desktop/Mobile Preview :
 
-<div>
-<img align="left" height="300" src="./demo.gif" />
+<div style="width💯">
+<img align="center" height="300" src="./demo.gif" />
 </div>
-
-https://john-bessey-photo-album.netlify.app/
 
 
 
