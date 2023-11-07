@@ -29,7 +29,7 @@ Next.js(14.1 - latest version), Tailwind CSS, Axios, React-beautiful-dnd, React 
 - More intuitive design with tailwind CSS frameworks
 - Add some more features(Save, Edit, Download)
 
-## Time taken: 6 hours(including requirements onboarding time)
+## Time taken: 6 hours
 
 ## Lighthouse Result:
 
