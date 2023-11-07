@@ -12,8 +12,6 @@ export const SelectedImageBox = ({
   photos,
   handleRemove,
 }: SelectedImageBoxProps) => {
-  const [isLoading, setLoading] = useState(true);
-
   return (
     <Droppable droppableId="selectedImageDroppable">
       {(provided) => (
@@ -27,8 +25,8 @@ export const SelectedImageBox = ({
           </div>
           <div className="flex flex-row">
             <div className="w-[50%] flex flex-wrap flex-row gap-2 h-fit">
-              {photos.map((photo) => (
-                <div className="h-fit relative">
+              {photos.map((photo, ind) => (
+                <div className="h-fit relative" key={ind}>
                   <CustomImage
                     src={photo.url}
                     alt={photo.title}
@@ -46,7 +44,7 @@ export const SelectedImageBox = ({
             </div>
             <div className="w-[50%] flex flex-col gap-2">
               {photos.map((photo, index) => (
-                <p>{`${index + 1}. ${photo.title}`}</p>
+                <p key={index}>{`${index + 1}. ${photo.title}`}</p>
               ))}
             </div>
           </div>
