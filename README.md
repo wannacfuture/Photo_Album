@@ -1,4 +1,8 @@
-[![Watch the video]](./demo.mp4)
+### Desktop/Mobile Preview :
+
+<div>
+<img align="left" height="300" src="./demo.gif" />
+</div>
 
 https://john-bessey-photo-album.netlify.app/
 
